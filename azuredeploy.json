@@ -304,7 +304,7 @@
             "name": "[concat(variables('webAppName'),'/msdeploy')]",
             "location": "[parameters('location')]",
             "dependsOn": [
-                "[concat('Microsoft.Web/sites/',variables('webAppName'))]"
+                "[resourceId('Microsoft.Web/sites',variables('webAppName'))]"
             ],
             "tags": {},
             "properties": {
