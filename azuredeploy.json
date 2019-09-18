@@ -268,7 +268,7 @@
                 "siteConfig": {
                   "connectionStrings": [
                     {
-                      "name": "storageConnection",
+                      "name": "AzureStorageStr",
                       "connectionString": "[concat('DefaultEndpointsProtocol=https;AccountName=',variables('storageAccountName'),';AccountKey=',concat(listKeys(variables('storageAccountId'),'2015-05-01-preview').key1))]"
                     }
                   ]
@@ -300,6 +300,7 @@
                     "dependsOn": [
                       "[resourceId('Microsoft.Web/sites', variables('webAppName'))]"
                     ]
+                   
                 }
                     
                 
